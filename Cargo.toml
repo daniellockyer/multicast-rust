@@ -1,0 +1,19 @@
+[package]
+name = "multicast-rust"
+version = "0.1.0"
+authors = ["Daniel Lockyer <thisisdaniellockyer@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/neosilky/multicast-rust.git"
+description = "A basic multicast client/server written in Rust"
+keywords = ["multicast", "client", "server"]
+
+[dependencies]
+net2 = "0.2"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
